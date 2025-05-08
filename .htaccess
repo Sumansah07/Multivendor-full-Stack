@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Redirect damichha.com to bipinxetry.com except for /admin path
+RewriteCond %{REQUEST_URI} !^/admin [NC]
+RewriteRule ^(.*)$ https://bipinxetry.com/$1 [L,R=301]
+
+# Handle /auth/login redirect
+RewriteRule ^auth/login$ /admin [L,R=301]
+
+# Proxy requests to Node.js backend
+RewriteCond %{REQUEST_URI} ^/api/ [NC]
+RewriteRule ^api/(.*)$ http://localhost:5000/api/$1 [P,L]
+
+# Handle frontend routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin/(.*)$ /admin/index.html [L] 
