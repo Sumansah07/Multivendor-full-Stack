@@ -54,31 +54,6 @@ This is the backend API for the Grocery Admin Panel, providing endpoints for Das
    npm start
    ```
 
-## API Documentation
-
-### Authentication APIs
-- POST /api/auth/login - Login with email and password
-- GET /api/auth/profile - Get current user profile
-- PUT /api/auth/profile - Update user profile
-- PUT /api/auth/change-password - Change password
-
-### Dashboard APIs
-- GET /api/dashboard/statistics - Get dashboard statistics
-- GET /api/dashboard/users - Get user list
-
-### POS APIs
-- GET /api/pos/stores - Get stores list
-- GET /api/pos/products/:storeId - Get products by store
-- POST /api/pos/customer - Get or create customer
-- POST /api/pos/calculate-total - Calculate order total
-- POST /api/pos/order - Create new order
-
-### Order Management APIs
-- GET /api/orders - Get orders list with filtering
-- GET /api/orders/:id - Get order details
-- PUT /api/orders/:id/status - Update order status
-- GET /api/orders/export - Export orders
-
 ## Security Features
 
 - JWT-based authentication
