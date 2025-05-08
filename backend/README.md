@@ -1,4 +1,4 @@
-# Grocery Admin Panel Backend
+# Admin Panel Backend
 
 This is the backend API for the Grocery Admin Panel, providing endpoints for Dashboard, POS, and Order Management.
 
