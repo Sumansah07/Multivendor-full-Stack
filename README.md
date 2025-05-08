@@ -121,27 +121,6 @@ npm install
 npm run dev
 ```
 
-The frontend will be available at http://localhost:2000 and the backend API at http://localhost:5000.
-
-## 📚 API Documentation
-
-### Authentication APIs
-- `POST /api/auth/login` - Login with email and password
-- `GET /api/auth/profile` - Get current user profile
-- `PUT /api/auth/profile` - Update user profile
-- `PUT /api/auth/change-password` - Change password
-
-### Food Module APIs
-- `GET /api/fooddashboard/statistics` - Get food dashboard statistics
-- `GET /api/foodpos/stores` - Get food stores list
-- `POST /api/foodpos/order` - Create new food order
-- `GET /api/foodorders` - Get food orders list
-
-### Grocery Module APIs
-- `GET /api/grocerydashboard/statistics` - Get grocery dashboard statistics
-- `GET /api/grocerypos/stores` - Get grocery stores list
-- `POST /api/grocerypos/order` - Create new grocery order
-- `GET /api/groceryorders` - Get grocery orders list
 
 ## 🔒 Security Features
 
