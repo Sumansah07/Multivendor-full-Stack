@@ -26,10 +26,6 @@ export default function RootLayout({ children }) {
       <ModuleProvider>
         <body className=''>
           <Link href="/grocery/dashboard">Go to dashboard</Link>
-
-
-
-
           <main>{children}</main>
           <Toaster position="top-right" />
         </body>

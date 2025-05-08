@@ -71,7 +71,7 @@ const Navbar = () => {
                             <div className="absolute left-0 mt-1 bg-white rounded-lg shadow-xl py-2 hidden group-hover:block transform transition-all duration-200 z-50 w-80">
                                 <div className="px-4 py-2 h-28 bg-teal-700 text-white text-xs font-semibold">
                                     <p className='font-bold text-xl my-2'>Settings</p>
-                                    <p className='text-sm font-normal'>Monitor your business general settings <br /> from here</p>
+                                    <p className='text-sm font-normal'>Monitor your business general setting <br /> from here</p>
                                     
                                 </div>
                                 

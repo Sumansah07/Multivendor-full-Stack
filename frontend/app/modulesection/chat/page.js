@@ -32,7 +32,7 @@ const Page = () => {
 
   return (
     <div className="flex h-[calc(100vh-4rem)]">
-        
+
       {/* Left Panel - Customer List */}
       <div className="w-1/3 border-r bg-white">
       <div className="admin-details flex items-center space-x-3 p-4 border-b bg-white">
@@ -46,7 +46,7 @@ const Page = () => {
   </div>
   <div>
     <h3 className="font-medium">John Doe</h3>
-    <p className="text-sm text-gray-500">Admin</p>
+    <div className="text-sm text-gray-500">Admin</div>
   </div>
 </div>
         <div className="p-4">
@@ -58,7 +58,7 @@ const Page = () => {
             />
             <FaSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           </div>
-          
+
           <div className="space-y-2">
             {customers.map(customer => (
               <div
@@ -70,8 +70,8 @@ const Page = () => {
               >
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="font-medium">{customer.name}</p>
-                    <p className="text-sm text-gray-500">{customer.email}</p>
+                    <div className="font-medium">{customer.name}</div>
+                    <div className="text-sm text-gray-500">{customer.email}</div>
                   </div>
                   {customer.unread > 0 && (
                     <span className="px-2 py-1 text-xs bg-teal-100 text-teal-800 rounded-full">
@@ -79,9 +79,9 @@ const Page = () => {
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-gray-600 mt-1 truncate">
+                <div className="text-sm text-gray-600 mt-1 truncate">
                   {customer.lastMessage}
-                </p>
+                </div>
               </div>
             ))}
           </div>
@@ -110,18 +110,18 @@ const Page = () => {
                     }`}
                   >
                     <div className={`max-w-[70%] p-3 rounded-lg ${
-                      message.sender === 'admin' 
+                      message.sender === 'admin'
                         ? 'bg-teal-800 text-white'
                         : 'bg-white'
                     }`}>
-                      <p>{message.text}</p>
-                      <p className={`text-xs mt-1 ${
+                      <div>{message.text}</div>
+                      <div className={`text-xs mt-1 ${
                         message.sender === 'admin'
                           ? 'text-teal-100'
                           : 'text-gray-500'
                       }`}>
                         {message.time}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 ))}

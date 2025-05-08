@@ -139,8 +139,10 @@ const Navbar = () => {
                             <div className="absolute right-0 mt-1 bg-white rounded-lg shadow-xl py-4 hidden group-hover:block transform transition-all duration-200 z-50 w-[500px]">
                                 <div className="module-secction m-4 ">
                                     <p className='font-bold text-xl'>Modules Section</p>
-                                    <p className='text-blue-600 my-3'>Select Module and monitor <p className='text-blue-600'>your business module wise</p></p>
-
+                                    <div className='text-blue-600 my-3'>
+                                        Select Module and monitor
+                                        <span className='text-blue-600 block'>your business module wise</span>
+                                    </div>
                                 </div>
                                 <div className="flex flex-row items-center justify-evenly px-4 my-12">
                                     <Link href="/grocery/dashboard">
@@ -245,7 +247,7 @@ const Navbar = () => {
                                 Customers
                             </span>
                         </Link>
-                        <div 
+                        <div
                             onClick={() => setIsWalletOpen(!isWalletOpen)}
                             className="flex items-center justify-between p-3 rounded-md hover:text-green-300 cursor-pointer"
                         >
@@ -255,7 +257,7 @@ const Navbar = () => {
                             </span>
                             <FaChevronDown className={`transition-transform duration-200 ${isWalletOpen ? 'transform rotate-180' : ''}`} />
                         </div>
-                        
+
                         {isWalletOpen && (
                             <div className="ml-4 mt-2 space-y-2">
                                 <Link href="/modulesection/customerwallet/addfunds">
@@ -278,7 +280,7 @@ const Navbar = () => {
                                 </Link>
                             </div>
                         )}
-                        <div 
+                        <div
                             onClick={() => setIsLoyaltyOpen(!isLoyaltyOpen)}
                             className="flex items-center justify-between p-3 rounded-md hover:text-green-300 cursor-pointer"
                         >
@@ -288,7 +290,7 @@ const Navbar = () => {
                             </span>
                             <FaChevronDown className={`transition-transform duration-200 ${isLoyaltyOpen ? 'transform rotate-180' : ''}`} />
                         </div>
-                        
+
                         {isLoyaltyOpen && (
                             <div className="ml-4 mt-2 space-y-2">
                                 <Link href="/modulesection/loyaltypoints">
@@ -322,7 +324,7 @@ const Navbar = () => {
                             </span>
                         </Link>
 
-                        <div 
+                        <div
                             onClick={() => setIsEmployeeOpen(!isEmployeeOpen)}
                             className="flex items-center justify-between p-3 rounded-md hover:text-green-300 cursor-pointer"
                         >
@@ -332,7 +334,7 @@ const Navbar = () => {
                             </span>
                             <FaChevronDown className={`transition-transform duration-200 ${isEmployeeOpen ? 'transform rotate-180' : ''}`} />
                         </div>
-                        
+
                         {isEmployeeOpen && (
                             <div className="ml-4 mt-2 space-y-2">
                                 <Link href="/modulesection/add-new-employee">
