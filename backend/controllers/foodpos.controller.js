@@ -158,7 +158,7 @@ const calculateOrderTotal = async (items, storeId) => {
   
     } catch (error) {
       console.error('Calculation error:', error);
-      return { success: false, message: 'Error calculating total' };
+      return { success: false, message: 'Error calculating total no.' };
     }
   };
 // Calculate order total
